@@ -6,7 +6,6 @@ Because no-one can remember the Kubernetes yaml syntax.
 
 https://gimlet.io/docs/reference/onechart-reference
 
-#
 ## Getting started
 
 OneChart is a generic Helm Chart for web applications. The idea is that most Kubernetes manifest look alike, only very few parts actually change.
