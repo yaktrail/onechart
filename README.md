@@ -14,7 +14,7 @@ OneChart is a generic Helm Chart for web applications. The idea is that most Kub
 Add the Onechart Helm repository:
 
 ```bash
-helm repo add onechart https://chart.onechart.dev
+helm repo add onechart https://yaktrail.github.io/onechart/
 ```
 
 Set your image name and version, the boilerplate is generated.
@@ -42,25 +42,6 @@ ingress:
   annotations:
     kubernetes.io/ingress.class: nginx
   host: my-app.mycompany.com
-```
-
-### Alternative: using an OCI repository
-You can also template and install onechart from an OCI repository as follows:
-
-Check the generated Kubernetes yaml:
-
-```bash
-helm template my-release oci://ghcr.io/gimlet-io/onechart --version 0.62.0 \
-  --set image.repository=nginx \
-  --set image.tag=1.19.3
-```
-
-Deploy with Helm:
-
-```bash
-helm install my-release oci://ghcr.io/gimlet-io/onechart --version 0.62.0 \
-  --set image.repository=nginx \
-  --set image.tag=1.19.3
 ```
 
 See all [Examples](/website/docs/examples/)
