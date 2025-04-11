@@ -1,5 +1,7 @@
 # One chart to rule them all
 
+Forked from: https://github.com/gimlet-io/onechart
+
 A generic Helm chart for your application deployments.
 
 Because no-one can remember the Kubernetes yaml syntax.
